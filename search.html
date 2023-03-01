@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imagenes/favicon.png" />
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="left">
+        <h1 class="page-logo"><span class="logo-color">トマト</span>アニメ</h1>
+      </div>
+      <nav class="nav-bar">
+        <a href="./index.html" class="nav-link hover-link">Home</a>
+        <a href="" class="nav-link hover-link">News</a>
+        <a href="" class="nav-link hover-link">Calculator</a>
+        <a href="" class="nav-link hover-link">Contact</a>
+      </nav>
+      <div class="right">
+        <a href="./search.html">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+        </a>
+        <a href="">
+          <div class="login">
+            <p>Log in</p>
+          </div>
+        </a>
+      </div>
+    </header>
+    <input type="text" id="search-bar" placeholder="Search by title..." />
+    <div id="anime-container">
+      <!-- Anime cards will be added here dynamically -->
+    </div>
+
+    <script src="./js/search.js"></script>
+  </body>
+</html>
