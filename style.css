@@ -1,5 +1,7 @@
+/* Import font family */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
+/* CSS Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +13,7 @@
   color: black;
 }
 
+/* General stylings */
 html {
   scroll-behavior: smooth;
 }
@@ -19,13 +22,21 @@ body {
   background-color: #eff5f7;
 }
 
+input:focus {
+  outline: none;
+}
+
+/* Styling for logo text */
 .logo-color {
   color: #fe5c5c;
 }
 
 .page-logo {
   font-size: 32px;
+  user-select: none;
 }
+
+/* Styling for page header and header layout */
 
 .page-header {
   display: grid;
@@ -43,6 +54,7 @@ body {
   width: 200px;
 }
 
+/* Nav bar styling (middle section of the header) */
 .nav-bar {
   grid-area: nav;
   justify-self: center;
@@ -54,7 +66,8 @@ body {
   justify-content: space-evenly;
 }
 
-.hover-link::after {
+.nav-link::after {
+  /* This is the red bar that shows when hovering nav links */
   content: "";
   height: 4px;
   width: 25px;
@@ -80,7 +93,8 @@ body {
   opacity: 0.5;
   transition: opacity 0.25s ease-in-out;
 }
-.hover-link::after {
+
+.nav-link::after {
   opacity: 0;
 }
 
@@ -88,12 +102,13 @@ body {
   opacity: 1;
 }
 
-.hover-link:hover::after {
+.nav-link:hover::after {
   opacity: 1;
   animation: navhover 0.25s linear;
 }
 
 @keyframes navhover {
+  /* Animation to show the red bar */
   0% {
     width: 0;
   }
@@ -102,10 +117,16 @@ body {
   }
 }
 
+/* Right side styling (right section of the header, search and login buttons) */
+
 .right {
   grid-area: contact;
   justify-self: start;
   display: flex;
+}
+
+.right:hover {
+  cursor: pointer;
 }
 
 .search {
@@ -140,29 +161,162 @@ body {
   font-size: 18px;
 }
 
-.main-content {
+/* Main section layout for both main page and side pages */
+.main-container {
   display: grid;
-  grid-template-rows: 450px repeat(3, 350px) repeat(2, 600px);
+  grid-template-rows: 450px repeat(3, 350px) 600px;
 }
 
+.main {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: minmax(400px, 1fr);
+  margin-bottom: 50px;
+}
+
+/* Search bar styling for search page */
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 75px;
+  margin: 50px 0;
+}
+
+#search-input {
+  width: 1000px;
+  height: inherit;
+  padding: 0 30px;
+  font-size: 26px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* Cards styling for results in search page */
 .card {
   background-color: white;
   display: flex;
   align-items: center;
   padding: 30px;
-  margin: 10px;
-  width: 700px;
-  min-height: 100px;
+  margin-bottom: 25px;
+  width: 1000px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .card-img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-right: 10px;
+  border-radius: 10px;
 }
 
 .text-card {
   padding: 0 20px;
+}
+
+.text-card > h2 {
+  margin-bottom: 15px;
+}
+
+/* Page footer styling */
+.page-footer {
+  background-color: #2e2e2e;
+  height: 650px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-rows: 100px 150px 100px 50px;
+  gap: 50px;
+  grid-template-areas:
+    "f-logo"
+    "links"
+    "social"
+    "copy";
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: f-logo;
+}
+
+.footer-logo {
+  color: white;
+}
+
+.f-logo {
+  font-size: 40px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: links;
+  width: 275px;
+}
+
+/* .footer-links a:hover {
+  text-decoration: underline;
+} */
+.footer-links > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-box {
+  grid-area: social;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-box > p,
+.copyright > p,
+.footer-links a {
+  font-size: 20px;
+  color: white;
+}
+
+.social-media-box > p,
+.footer-links a {
+  margin-bottom: 25px;
+}
+.social-media-box > p {
+  font-weight: 700;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 30px;
+  opacity: 0.5;
+  transition: opacity 0.15s linear;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.copyright {
+  grid-area: copy;
+}
+
+.copyright > p {
+  text-align: center;
 }

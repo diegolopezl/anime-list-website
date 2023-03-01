@@ -4,8 +4,8 @@
     "genre": "Action",
     "studio": "Wit Studio",
     "episodes": 75,
-    "synopsis": "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as one of the walls is damaged by a 60 meter Titan causing a breach in the wall. As the smaller Titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single Titan and take revenge for all of mankind.",
-    "image": "https://example.com/images/attack_on_titan.jpg"
+    "synopsis": "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as one of the walls is damaged by a 60 meter Titan causing a breach in the wall.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg/220px-Shingeki_no_Kyojin_manga_volume_1.jpg  "
   },
   {
     "title": "One Punch Man",
@@ -13,7 +13,7 @@
     "studio": "Madhouse",
     "episodes": 24,
     "synopsis": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch. Alongside his cyborg disciple Genos, Saitama joins the Heroes Association, hoping to become a true hero.",
-    "image": "https://example.com/images/one_punch_man.jpg"
+    "image": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/d8eed44e3d48097ab5fd36b6815fc18e.jpeg"
   },
   {
     "title": "Death Note",
@@ -21,7 +21,7 @@
     "studio": "Madhouse",
     "episodes": 37,
     "synopsis": "Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
-    "image": "https://example.com/images/death_note.jpg"
+    "image": "https://m.media-amazon.com/images/M/MV5BNjRiNmNjMmMtN2U2Yi00ODgxLTk3OTMtMmI1MTI1NjYyZTEzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
   },
   {
     "title": "Fullmetal Alchemist: Brotherhood",
@@ -29,7 +29,7 @@
     "studio": "Bones",
     "episodes": 64,
     "synopsis": "Edward and Alphonse Elric's reckless disregard for alchemy's fundamental laws ripped half of Ed's limbs from his body and left Al's soul clinging to a cold suit of armor. To restore what was lost, the brothers scour a war-torn land for the Philosopher's Stone, a fabled relic which grants the ability to perform alchemy in impossible ways. The Elrics are not alone in their search; the corrupt State Military is also eager to harness the artifact's power. So too are the strange Homunculi and their shadowy creator. The mythical gem lures exotic alchemists from distant kingdoms, scarring some deeply enough to inspire murder. As the Elrics find their course altered by these enemies and allies, their purpose remains unchanged – and their bond unbreakable.",
-    "image": "https://example.com/images/fma_brotherhood.jpg"
+    "image": "https://m.media-amazon.com/images/M/MV5BZmEzN2YzOTItMDI5MS00MGU4LWI1NWQtOTg5ZThhNGQwYTEzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
   },
   {
     "title": "Your Lie in April",
@@ -37,15 +37,15 @@
     "studio": "A-1 Pictures",
     "episodes": 22,
     "synopsis": "Kosei Arima was a piano prodigy until his abusive mother died in an accident. He gave up piano entirely and lived a mundane life until he met a free-spirited violinist named Kaori Miyazono. Her playing style was radically different from his, but together they create a magical sound. As Kosei begins to fall in love with Kaori, he discovers that he must confront his past and his feelings of guilt in order to move on and create music again.",
-    "image": "https://example.com/images/your_lie_in_april.jpg"
+    "image": "https://m.media-amazon.com/images/M/MV5BYThlNWY5ZDgtYTIxNC00ZjdiLWJmNGUtMDFjMDlmZTAzOWFiXkEyXkFqcGdeQXVyNTM4NzAzNjc@._V1_FMjpg_UX1000_.jpg"
   },
   {
     "title": "Naruto",
     "genre": "Action",
     "studio": "Studio Pierrot",
     "episodes": 220,
-    "synopsis": "Naruto Uzumaki wants to be the best ninja in the land. He's done well so far, but Naruto knows he must train harder than ever and leaves his village for intense exercises that will push him to his limits.",
-    "image": "https://example.com/images/naruto.jpg"
+    "synopsis": "Naruto Uzumaki is a young ninja who dreams of becoming the Hokage, the leader of his village. He carries the Nine-Tailed Fox Spirit within him, which caused him to be shunned by the villagers. Along with his teammates Sasuke and Sakura, Naruto goes on missions and trains to become stronger. As they progress, they encounter dangerous enemies, including Orochimaru and Akatsuki, and learn about the truth behind their village's past.",
+    "image": "https://m.media-amazon.com/images/M/MV5BMDI3ZDY4MDgtN2U2OS00Y2YzLWJmZmYtZWMzOTM3YWFjYmUyXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
   },
   {
     "title": "Haikyu!!",
@@ -53,7 +53,7 @@
     "studio": "Production I.G",
     "episodes": 85,
     "synopsis": "Shoyo Hinata is determined to become the best volleyball player ever. The problem? He's not very tall. But that doesn't stop him from joining his school's volleyball team and striving to defeat his rival, Tobio Kageyama. Along the way, they both learn the value of teamwork and hard work in achieving their dreams.",
-    "image": "https://example.com/images/haikyuu.jpg"
+    "image": "https://m.media-amazon.com/images/M/MV5BNjkyNDI2MTgtN2Y3NS00M2RjLWJhNDMtMmNmZmUwMDQwZTE1XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
   },
   {
     "title": "My Hero Academia",
@@ -61,7 +61,7 @@
     "studio": "Bones",
     "episodes": 113,
     "synopsis": "Izuku Midoriya has always wanted to be a hero, but he was born without a Quirk, the special power that every person in his world has. When he meets the world's greatest hero, All Might, he learns that even without a Quirk, he can still become a hero. Izuku enrolls in a prestigious hero academy and faces numerous challenges as he learns to control his newfound power and becomes a true hero.",
-    "image": "https://example.com/images/my_hero_academia.jpg"
+    "image": "https://cdn.myanimelist.net/images/about_me/ranking_items/12483503-fd2ba656-3b99-4c65-b078-19c08a17d4bd.jpg?t=1677246458"
   },
   {
     "title": "Spirited Away",
@@ -69,6 +69,6 @@
     "studio": "Studio Ghibli",
     "episodes": 1,
     "synopsis": "10-year-old Chihiro and her parents stumble upon a seemingly abandoned amusement park. After her parents are turned into pigs, she meets the enigmatic Haku, who tells her that the only way to survive in this strange world is to work at the bathhouse where the spirits come to relax. As she begins her work, Chihiro learns about the spirits and their mysterious ways, and she must use her wits and courage to save her parents and escape from the spirit world.",
-    "image": "https://example.com/images/spirited_away.jpg"
+    "image": "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
   }
 ]

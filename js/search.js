@@ -1,5 +1,5 @@
 $.getJSON("./anime.json", function (data) {
-  const animeContainer = $("#anime-container");
+  const animeContainer = $(".anime-container");
 
   function filterAnime(query) {
     animeContainer.empty();
@@ -15,9 +15,7 @@ $.getJSON("./anime.json", function (data) {
 
     filteredData.forEach((anime) => {
       const card = $("<div>").addClass("card");
-      const image = $("<img>")
-        .attr("src", "./imagenes/favicon.png")
-        .addClass("card-img");
+      const image = $("<img>").attr("src", anime.image).addClass("card-img");
       const text = $("<div>").addClass("text-card");
       const title = $("<h2>").text(anime.title);
       const synopsis = $("<p>").text(anime.synopsis);
@@ -27,7 +25,7 @@ $.getJSON("./anime.json", function (data) {
     });
   }
 
-  $("#search-bar").on("input", function () {
+  $("#search-input").on("input", function () {
     const query = $(this).val();
     filterAnime(query);
   });
