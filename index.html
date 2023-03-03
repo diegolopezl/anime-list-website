@@ -22,10 +22,10 @@
         <h1 class="page-logo"><span class="logo-color">トマト</span>アニメ</h1>
       </div>
       <nav class="nav-bar">
-        <a href="./index.html" class="nav-link active-page">Home</a>
-        <a href="" class="nav-link hover-link">News</a>
-        <a href="" class="nav-link hover-link">Calculator</a>
-        <a href="" class="nav-link hover-link">Contact</a>
+        <p class="nav-link active-page">Home</p>
+        <a href="./news.html" class="nav-link hover-link">News</a>
+        <a href="./calculator.html" class="nav-link hover-link">Calculator</a>
+        <a href="./contact.html" class="nav-link hover-link">Contact</a>
       </nav>
       <div class="right">
         <a href="./search.html">
@@ -41,11 +41,56 @@
       </div>
     </header>
     <main class="main-container">
-      <article class="top-airing"></article>
-      <article class="most-popular"></article>
-      <article class="news-articles"></article>
-      <section class="go-to-calculator"></section>
-      <section class="weekly-schedule"></section>
+      <article class="top-airing home-sections">
+        <div class="section-top">
+          <h1 class="section-title">Top Airing</h1>
+          <div class="arrow-buttons">
+            <button class="button-left-ta arrows">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="button-right-ta arrows">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+        <section class="top-airing-container"></section>
+      </article>
+      <article class="most-popular home-sections">
+        <div class="section-top">
+          <h1 class="section-title">Most Popular</h1>
+          <div class="arrow-buttons">
+            <button class="button-left-mp arrows">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="button-right-mp arrows">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+        <section class="most-popular-container"></section>
+      </article>
+      <article class="news-articles home-sections">
+        <div class="section-top">
+          <h1 class="section-title">Upcoming Anime</h1>
+          <a class="view-more-news" href="./news.html">View More</a>
+        </div>
+        <section class="upcoming-container"></section>
+      </article>
+      <section class="go-to-calculator">
+        <div class="go-to-calc-txt">
+          <h1>
+            Looking for an easy way to calculate the duration of your favorite
+            anime series? Use our Anime Duration Calculator
+          </h1>
+        </div>
+        <div class="go-to-calc-btn">
+          <img src="./imagenes/chopper.png" alt="" />
+          <a href="./calculator.html"> Try it out!</a>
+        </div>
+      </section>
+      <section class="weekly-schedule home-sections">
+        <h1 class="section-title">Weekly Schedule</h1>
+      </section>
     </main>
     <footer class="page-footer">
       <section class="footer-grid">
