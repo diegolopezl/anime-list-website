@@ -2,11 +2,11 @@ const topAiringContainer = $(".top-airing-container");
 const mostPopularContainer = $(".most-popular-container");
 const upcomingContainer = $(".upcoming-container");
 const topAiringUrl =
-  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=airing&limit=10";
+  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=airing&limit=10&sfw";
 const mostPopularUrl =
-  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=bypopularity&limit=10";
+  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=bypopularity&limit=10&sfw";
 const upcomingUrl =
-  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=upcoming&limit=2";
+  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=upcoming&limit=2&sfw";
 
 // Define a function to create a card element and append it to a container
 function createCard(anime, container, cardClass, textClass) {
@@ -77,10 +77,6 @@ $.getJSON(upcomingUrl, function (info) {
   });
 });
 
-$.getJSON("https://api.jikan.moe/v4/schedules", function (info) {
-  console.log(info.data);
-});
-
 $(document).ready(function () {
   $(".button-left-ta").on("click", function () {
     scrollSlider($(".top-airing-container"), "-=");
@@ -97,7 +93,7 @@ $(document).ready(function () {
   });
 
   function scrollSlider(container, direction) {
-    let scrollAmount = 300; // set the amount of pixels to scroll
+    let scrollAmount = 500; // set the amount of pixels to scroll
     let animationDuration = 250;
     container.animate(
       {

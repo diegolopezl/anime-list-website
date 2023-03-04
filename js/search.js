@@ -1,5 +1,5 @@
 $.getJSON(
-  "https://api.jikan.moe/v4/top/anime?filter=bypopularity",
+  "https://api.jikan.moe/v4/top/anime?filter=bypopularity&sfw",
   function (info) {
     const animeContainer = $(".anime-container");
     console.log(info.data);

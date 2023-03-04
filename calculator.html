@@ -23,7 +23,7 @@
       </div>
       <nav class="nav-bar">
         <a href="./index.html" class="nav-link hover-link">Home</a>
-        <a href="./news.html" class="nav-link hover-link">News</a>
+        <a href="./news.html" class="nav-link hover-link">Releases</a>
         <p class="nav-link active-page">Calculator</p>
         <a href="./contact.html" class="nav-link hover-link">Contact</a>
       </nav>
@@ -41,7 +41,30 @@
       </div>
     </header>
     <main class="main">
-      <!-- HTML -->
+      <section class="calculator-container">
+        <section class="calc-top">
+          <h4><span class="logo-color">Anime </span>Duration Calculator</h4>
+          <input
+            id="episodes"
+            class="calc-input"
+            type="text"
+            placeholder="# of Episodes"
+          />
+          <input
+            id="minutes"
+            class="calc-input"
+            type="text"
+            placeholder="Minutes per Episode"
+          />
+          <div class="results-container">
+            <h4>Time</h4>
+            <p class="results">00:00:00</p>
+          </div>
+        </section>
+        <section class="calc-bottom">
+          <button class="calculate-results">Calculate</button>
+        </section>
+      </section>
     </main>
     <footer class="page-footer">
       <section class="footer-grid">
@@ -79,6 +102,6 @@
         </div>
       </section>
     </footer>
-    <script src="./js/search.js"></script>
+    <script src="./js/calculator.js"></script>
   </body>
 </html>
