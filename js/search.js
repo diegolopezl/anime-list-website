@@ -37,16 +37,27 @@ $.getJSON(
         const readMoreBtn = $("<button>")
           .text("Read more")
           .addClass("read-more");
-        const animeInfo = $("<p>")
-          .text(
+        const animeInfo = $("<p>").addClass("anime-info");
+        if (anime.title === "One Piece") {
+          animeInfo.text(
             "TV ・ Episodes " +
-              anime.episodestitle +
+              1050 +
+              "+" +
               " ・ " +
               anime.studios[0].name +
               " ・ Score: " +
               anime.score
-          )
-          .addClass("anime-info");
+          );
+        } else {
+          animeInfo.text(
+            "TV ・ Episodes " +
+              anime.episodes +
+              " ・ " +
+              anime.studios[0].name +
+              " ・ Score: " +
+              anime.score
+          );
+        }
         readMoreBtn.on("click", function () {
           card.css("height", "100%");
           if (synopsis.text() === truncatedSynopsis + "...") {
