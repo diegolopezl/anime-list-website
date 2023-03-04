@@ -2,9 +2,9 @@ const topAiringContainer = $(".top-airing-container");
 const mostPopularContainer = $(".most-popular-container");
 const upcomingContainer = $(".upcoming-container");
 const topAiringUrl =
-  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=airing&limit=15";
+  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=airing&limit=10";
 const mostPopularUrl =
-  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=bypopularity&limit=15";
+  "https://api.jikan.moe/v4/top/anime?enum=tv&filter=bypopularity&limit=10";
 const upcomingUrl =
   "https://api.jikan.moe/v4/top/anime?enum=tv&filter=upcoming&limit=2";
 
@@ -75,6 +75,10 @@ $.getJSON(upcomingUrl, function (info) {
     upcomingItem.append(upAnimeImg, upAnimeInfo);
     upcomingContainer.append(upcomingItem);
   });
+});
+
+$.getJSON("https://api.jikan.moe/v4/schedules", function (info) {
+  console.log(info.data);
 });
 
 $(document).ready(function () {
