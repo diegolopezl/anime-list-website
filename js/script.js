@@ -8,7 +8,6 @@ const mostPopularUrl =
 const upcomingUrl =
   "https://api.jikan.moe/v4/top/anime?enum=tv&filter=upcoming&limit=2&sfw";
 
-// Define a function to create a card element and append it to a container
 function createCard(anime, container, cardClass, textClass) {
   const card = $("<fig>").addClass(cardClass);
   card.css(
@@ -19,6 +18,7 @@ function createCard(anime, container, cardClass, textClass) {
   const genre = $("<p>");
   const title = $("<h4>");
   const longTitle = anime.title.substring(0, 20);
+  const linkToPage = $("<a>").attr("href", anime.url);
   if (anime.title.length > longTitle.length) {
     title.text(longTitle + "...");
   } else {
@@ -31,10 +31,10 @@ function createCard(anime, container, cardClass, textClass) {
   }
   cardText.append(title, genre);
   card.append(cardText);
-  container.append(card);
+  linkToPage.append(card);
+  container.append(linkToPage);
 }
 
-// Use $.getJSON() to get data from the API and create cards for each anime
 $.getJSON(topAiringUrl, function (info) {
   const animeData = info.data;
   console.log(info.data);

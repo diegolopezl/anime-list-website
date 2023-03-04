@@ -20,9 +20,13 @@ $.getJSON(
 
       filteredData.forEach((anime) => {
         const card = $("<div>").addClass("card");
-        const img = $("<img>")
+        const img = $("<div>")
           .attr("src", anime.images.jpg.image_url)
           .addClass("card-img");
+        img.css(
+          "background-image",
+          "url(" + anime.images.webp.large_image_url + ")"
+        );
         const text = $("<div>").addClass("text-card");
         const title = $("<h2>").text(anime.title);
 
@@ -33,16 +37,28 @@ $.getJSON(
         const readMoreBtn = $("<button>")
           .text("Read more")
           .addClass("read-more");
+        const animeInfo = $("<p>")
+          .text(
+            "TV ・ Episodes " +
+              anime.episodestitle +
+              " ・ " +
+              anime.studios[0].name +
+              " ・ Score: " +
+              anime.score
+          )
+          .addClass("anime-info");
         readMoreBtn.on("click", function () {
+          card.css("height", "100%");
           if (synopsis.text() === truncatedSynopsis + "...") {
             synopsis.text(fullSynopsis);
             readMoreBtn.text("Read less");
           } else {
+            card.css("height", "300px");
             synopsis.text(truncatedSynopsis + "...");
             readMoreBtn.text("Read more");
           }
         });
-        text.append(title, synopsis, readMoreBtn);
+        text.append(title, animeInfo, synopsis, readMoreBtn);
         card.append(img, text);
         animeContainer.append(card);
       });
